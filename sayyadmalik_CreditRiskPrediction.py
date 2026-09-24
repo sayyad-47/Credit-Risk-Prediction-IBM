@@ -299,13 +299,7 @@ def _chart(fig, height: int = 420, tickangle: int = -30) -> go.Figure:
 
 
 def _section(title: str):
-    """Render a clean section header.
-
-    The title string is written via st.markdown as normal markdown — NOT injected
-    into an HTML attribute — so Streamlit's Material Icons font cannot intercept
-    emoji codepoints and replace them with ligature strings like
-    'keyboard_double_arrow_right'.  The coloured underline is a separate empty div.
-    """
+   
     # Write the title as plain markdown so emojis are rendered by the browser,
     # then draw the accent underline as a thin HTML div below it.
     st.markdown(title, unsafe_allow_html=False)

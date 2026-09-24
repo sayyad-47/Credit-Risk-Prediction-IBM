@@ -52,8 +52,10 @@ section.main > div {
 }
 
 /* ── Root font ── */
-html, body, * {
-    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif !important;
+html, body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+* {
     box-sizing: border-box;
 }
 
